@@ -1,0 +1,728 @@
+{
+  "publicacion": "Resumen PMI",
+  "fecha": "Octubre 2026 · flash",
+  "fuente": "Fuente: S&P Global / HCOB · PMI flash de octubre 2026",
+  "nota": "Tiempos en segundos del video final. Datos verificados en docs/hikman/investigacion-pmi-2026-10-23.md",
+  "duracion": 125.6,
+  "voz": [
+    [
+      "00",
+      0.4
+    ],
+    [
+      "01",
+      5.2
+    ],
+    [
+      "02",
+      14.8
+    ],
+    [
+      "03",
+      31.6
+    ],
+    [
+      "04",
+      42.8
+    ],
+    [
+      "05",
+      56.7
+    ],
+    [
+      "06",
+      68.9
+    ],
+    [
+      "07",
+      85.2
+    ],
+    [
+      "08",
+      100.1
+    ],
+    [
+      "09",
+      119.6
+    ]
+  ],
+  "escala": [
+    45,
+    60
+  ],
+  "temas": [
+    {
+      "n": 1,
+      "nombre": "USD · Estados Unidos",
+      "inicio": 14.4
+    },
+    {
+      "n": 2,
+      "nombre": "EUR · Eurozona",
+      "inicio": 42.4
+    },
+    {
+      "n": 3,
+      "nombre": "GBP · Reino Unido",
+      "inicio": 68.5
+    },
+    {
+      "n": 4,
+      "nombre": "JPY · Japón",
+      "inicio": 84.8
+    },
+    {
+      "n": 5,
+      "nombre": "AUD · Australia",
+      "inicio": 99.7
+    }
+  ],
+  "velas": [
+    {
+      "t": 14.4,
+      "color": "toro"
+    },
+    {
+      "t": 42.4,
+      "color": "oso"
+    },
+    {
+      "t": 68.5,
+      "color": "toro"
+    },
+    {
+      "t": 84.8,
+      "color": "toro"
+    },
+    {
+      "t": 99.7,
+      "color": "oso"
+    },
+    {
+      "t": 115.2,
+      "color": "toro"
+    }
+  ],
+  "balanza": [
+    [
+      0,
+      0
+    ],
+    [
+      3.3,
+      0.25
+    ],
+    [
+      5.2,
+      0
+    ],
+    [
+      14.4,
+      0
+    ],
+    [
+      18.1,
+      -0.55
+    ],
+    [
+      39.4,
+      -0.65
+    ],
+    [
+      45.3,
+      0.2
+    ],
+    [
+      54.3,
+      0.45
+    ],
+    [
+      65.0,
+      0.6
+    ],
+    [
+      72.0,
+      -0.3
+    ],
+    [
+      78.4,
+      -0.45
+    ],
+    [
+      88.7,
+      -0.25
+    ],
+    [
+      98.3,
+      -0.35
+    ],
+    [
+      105.1,
+      0.55
+    ],
+    [
+      110.8,
+      0.7
+    ],
+    [
+      117.6,
+      0.0
+    ]
+  ],
+  "frases": [
+    {
+      "t": 2.7,
+      "html": "Solo uno <em>en contracción</em>",
+      "tono": "oso"
+    },
+    {
+      "t": 5.2,
+      "html": "Buenos días, <em>inversor</em>",
+      "tono": "toro"
+    },
+    {
+      "t": 9.5,
+      "html": "Sobre 50: <em>crece</em>",
+      "tono": "toro"
+    },
+    {
+      "t": 11.7,
+      "html": "Bajo 50: <em>se contrae</em>",
+      "tono": "oso"
+    },
+    {
+      "t": 14.8,
+      "html": "EE. UU.: <em>sigue hirviendo</em>",
+      "tono": "toro"
+    },
+    {
+      "t": 22.9,
+      "html": "Pedidos en <em>máximos</em>",
+      "tono": "toro"
+    },
+    {
+      "t": 31.6,
+      "html": "Precios: <em>aceleran</em>",
+      "tono": "oso"
+    },
+    {
+      "t": 36.9,
+      "html": "No frena · <em>hawkish</em>",
+      "tono": "toro"
+    },
+    {
+      "t": 42.8,
+      "html": "Eurozona: <em>se frena</em>",
+      "tono": "oso"
+    },
+    {
+      "t": 52.4,
+      "html": "Francia, <em>bajo 50</em>",
+      "tono": "oso"
+    },
+    {
+      "t": 56.7,
+      "html": "Márgenes <em>apretados</em>",
+      "tono": "oso"
+    },
+    {
+      "t": 64.9,
+      "html": "Huele a <em>estanflación</em>",
+      "tono": "oso"
+    },
+    {
+      "t": 68.9,
+      "html": "Reino Unido <em>acelera</em>",
+      "tono": "toro"
+    },
+    {
+      "t": 77.2,
+      "html": "Vuelve a <em>contratar</em>",
+      "tono": "toro"
+    },
+    {
+      "t": 81.5,
+      "html": "BoE: <em>menos margen</em>",
+      "tono": "toro"
+    },
+    {
+      "t": 85.2,
+      "html": "Japón: <em>estable</em>",
+      "tono": "neutro"
+    },
+    {
+      "t": 92.6,
+      "html": "Empleo: <em>mínimo de 14 meses</em>",
+      "tono": "oso"
+    },
+    {
+      "t": 96.5,
+      "html": "Pesa la <em>inflación</em>",
+      "tono": "toro"
+    },
+    {
+      "t": 100.1,
+      "html": "Australia: <em>se contrae</em>",
+      "tono": "oso"
+    },
+    {
+      "t": 109.0,
+      "html": "Costes <em>al alza</em>",
+      "tono": "oso"
+    },
+    {
+      "t": 111.7,
+      "html": "El dilema del <em>RBA</em>",
+      "tono": "neutro"
+    },
+    {
+      "t": 115.2,
+      "html": "Octubre, <em>de mayor a menor</em>",
+      "tono": "neutro"
+    },
+    {
+      "t": 119.6,
+      "html": "Ese es el resumen de los <em>PMI</em>",
+      "tono": "toro"
+    }
+  ],
+  "paises": {
+    "usd": {
+      "codigo": "USD",
+      "nombre": "Estados Unidos · S&P Global",
+      "inicio": 14.4,
+      "fin": 42.4,
+      "barras": {
+        "t0": 14.9,
+        "t1": 22.7,
+        "titulo": "PMI flash · octubre vs. septiembre",
+        "filas": [
+          {
+            "nombre": "Compuesto",
+            "oct": 57.6,
+            "sep": 58.4,
+            "esp": 57.6,
+            "t": 16.45,
+            "tValor": 18.05
+          },
+          {
+            "nombre": "Servicios",
+            "oct": 57.9,
+            "sep": 58.8,
+            "esp": 58.0,
+            "t": 18.8,
+            "tValor": 19.1
+          },
+          {
+            "nombre": "Manufactura",
+            "oct": 56.0,
+            "sep": 55.9,
+            "esp": 55.5,
+            "t": 20.0,
+            "tValor": 20.3
+          }
+        ],
+        "marca": {
+          "i": 0,
+          "texto": "Cerca de máximos de 5 años",
+          "t": 20.2
+        }
+      },
+      "records": {
+        "t0": 22.7,
+        "t1": 36.8,
+        "titulo": "Récords · ¿desde cuándo no se veía?",
+        "filas": [
+          {
+            "nombre": "Nuevos pedidos",
+            "desde": 2022.3,
+            "texto": "Máximo en +4,5 años",
+            "mas": true,
+            "tono": "toro",
+            "t": 23.0
+          },
+          {
+            "nombre": "Empleo en fábricas",
+            "desde": 2012.2,
+            "texto": "Desde marzo 2012",
+            "tono": "toro",
+            "t": 26.5
+          },
+          {
+            "nombre": "Precios de venta",
+            "desde": 2022.6,
+            "texto": "Desde agosto 2022",
+            "tono": "oso",
+            "t": 31.8
+          },
+          {
+            "nombre": "Plazos de entrega",
+            "desde": 2022.5,
+            "texto": "Desde julio 2022",
+            "tono": "oso",
+            "t": 33.2
+          },
+          {
+            "nombre": "Exportaciones",
+            "desde": 2022.4,
+            "texto": "Desde mayo 2022",
+            "tono": "toro",
+            "t": 34.4
+          }
+        ]
+      },
+      "sello": {
+        "texto": "Hawkish",
+        "sub": "Crece y los precios aceleran",
+        "t": 40.9,
+        "tono": "toro",
+        "t0": 36.9
+      }
+    },
+    "eur": {
+      "codigo": "EUR",
+      "nombre": "Eurozona · HCOB",
+      "inicio": 42.4,
+      "fin": 68.5,
+      "barras": {
+        "t0": 42.9,
+        "t1": 47.9,
+        "titulo": "PMI flash · octubre vs. septiembre",
+        "filas": [
+          {
+            "nombre": "Compuesto",
+            "oct": 51.9,
+            "sep": 53.1,
+            "esp": 52.7,
+            "t": 43.96,
+            "tValor": 45.26
+          },
+          {
+            "nombre": "Servicios",
+            "oct": 51.7,
+            "sep": 53.0,
+            "esp": 52.5,
+            "t": 45.8,
+            "tValor": 46.1
+          },
+          {
+            "nombre": "Manufactura",
+            "oct": 52.4,
+            "sep": 52.9,
+            "esp": 52.7,
+            "t": 46.5,
+            "tValor": 46.8
+          }
+        ],
+        "marca": {
+          "i": 0,
+          "texto": "Bajo lo esperado: 52,7",
+          "t": 47.4
+        }
+      },
+      "puntos": {
+        "t0": 47.9,
+        "t1": 56.6,
+        "titulo": "Compuesto por país · sep. → oct.",
+        "filas": [
+          {
+            "nombre": "Alemania",
+            "sep": 53.8,
+            "oct": 52.8,
+            "nota": "Fábricas: 54,2",
+            "t": 48.05,
+            "tMove": 49.5
+          },
+          {
+            "nombre": "Eurozona",
+            "sep": 53.1,
+            "oct": 51.9,
+            "t": 48.2,
+            "tMove": 50.2
+          },
+          {
+            "nombre": "Francia",
+            "sep": 51.1,
+            "oct": 48.4,
+            "nota": "Mínimo de 4 meses",
+            "t": 48.35,
+            "tMove": 54.2
+          }
+        ]
+      },
+      "margen": {
+        "t0": 56.6,
+        "t1": 68.5,
+        "tCoste": 57.0,
+        "tPrecio": 60.1,
+        "tAprieta": 62.8,
+        "sello": {
+          "texto": "Estanflación",
+          "sub": "El BCE queda atrapado",
+          "t": 65.0,
+          "tono": "oso"
+        }
+      }
+    },
+    "gbp": {
+      "codigo": "GBP",
+      "nombre": "Reino Unido · S&P Global",
+      "inicio": 68.5,
+      "fin": 84.8,
+      "barras": {
+        "t0": 69.0,
+        "t1": 77.1,
+        "titulo": "PMI flash · octubre vs. septiembre",
+        "filas": [
+          {
+            "nombre": "Compuesto",
+            "oct": 53.1,
+            "sep": 52.0,
+            "t": 70.33,
+            "tValor": 71.98
+          },
+          {
+            "nombre": "Servicios",
+            "oct": 53.1,
+            "sep": 52.1,
+            "esp": 51.8,
+            "t": 71.0,
+            "tValor": 71.3
+          },
+          {
+            "nombre": "Manufactura",
+            "oct": 52.8,
+            "sep": 51.9,
+            "esp": 51.7,
+            "t": 71.6,
+            "tValor": 71.9
+          },
+          {
+            "nombre": "Prod. fábricas",
+            "oct": 53.1,
+            "sep": 51.5,
+            "t": 73.42,
+            "tValor": 73.7
+          }
+        ],
+        "marca": {
+          "i": 3,
+          "texto": "Máximo de 25 meses",
+          "t": 75.8
+        }
+      },
+      "racha": {
+        "t0": 77.1,
+        "t1": 84.8,
+        "titulo": "Empleo privado · ¿sube o no sube?",
+        "inicio": "Sep 2024",
+        "fin": "Oct 2026",
+        "meses": 24,
+        "t": 77.3,
+        "tFin": 80.1
+      }
+    },
+    "jpy": {
+      "codigo": "JPY",
+      "nombre": "Japón · S&P Global",
+      "inicio": 84.8,
+      "fin": 99.7,
+      "barras": {
+        "t0": 85.3,
+        "t1": 96.4,
+        "titulo": "PMI flash · octubre vs. septiembre",
+        "filas": [
+          {
+            "nombre": "Compuesto",
+            "oct": 52.3,
+            "sep": 52.3,
+            "t": 87.1,
+            "tValor": 88.72
+          },
+          {
+            "nombre": "Servicios",
+            "oct": 52.0,
+            "sep": 51.3,
+            "t": 89.97,
+            "tValor": 90.3
+          },
+          {
+            "nombre": "Manufactura",
+            "oct": 53.3,
+            "sep": 54.1,
+            "t": 91.21,
+            "tValor": 91.5
+          },
+          {
+            "nombre": "Prod. fábricas",
+            "oct": 53.1,
+            "sep": 54.9,
+            "t": 91.7,
+            "tValor": 92.0
+          }
+        ],
+        "marca": {
+          "i": 3,
+          "texto": "Mínimo de 7 meses",
+          "t": 92.2
+        },
+        "aviso": {
+          "texto": "Empleo: mínimo de 14 meses",
+          "t": 94.0
+        }
+      },
+      "medidor": {
+        "t0": 96.4,
+        "t1": 99.7,
+        "titulo": "IPC subyacente · septiembre",
+        "valor": 2.1,
+        "meta": 2.0,
+        "max": 3.0,
+        "t": 96.6,
+        "previo": 1.7
+      }
+    },
+    "aud": {
+      "codigo": "AUD",
+      "nombre": "Australia · S&P Global",
+      "inicio": 99.7,
+      "fin": 115.2,
+      "barras": {
+        "t0": 100.2,
+        "t1": 108.9,
+        "titulo": "PMI flash · octubre vs. septiembre",
+        "filas": [
+          {
+            "nombre": "Compuesto",
+            "oct": 47.7,
+            "sep": 51.3,
+            "t": 103.1,
+            "tValor": 105.1
+          },
+          {
+            "nombre": "Servicios",
+            "oct": 47.8,
+            "sep": 51.9,
+            "t": 105.5,
+            "tValor": 105.8
+          },
+          {
+            "nombre": "Manufactura",
+            "oct": 49.7,
+            "sep": 49.6,
+            "t": 106.2,
+            "tValor": 106.5
+          },
+          {
+            "nombre": "Prod. fábricas",
+            "oct": 46.5,
+            "sep": 46.2,
+            "t": 106.8,
+            "tValor": 107.1
+          }
+        ],
+        "marca": {
+          "i": 0,
+          "texto": "1ª contracción en 5 meses",
+          "t": 106.37
+        }
+      },
+      "lista": {
+        "t0": 108.9,
+        "t1": 115.2,
+        "titulo": "Precios · octubre",
+        "filas": [
+          {
+            "texto": "Costes: mayor alza desde mayo",
+            "tono": "oso",
+            "t": 109.05
+          },
+          {
+            "texto": "Precios de venta: aceleran por 2º mes",
+            "tono": "oso",
+            "t": 110.2
+          }
+        ],
+        "chip": {
+          "texto": "28.10 · IPC de Australia",
+          "sub": "Próximo dato clave para el RBA",
+          "t": 113.5
+        }
+      }
+    }
+  },
+  "cierre": {
+    "inicio": 115.2,
+    "fin": 125.6,
+    "t1": 119.6,
+    "titulo": "Compuesto de octubre · de mayor a menor",
+    "filas": [
+      {
+        "nombre": "USD",
+        "v": 57.6,
+        "t": 115.6
+      },
+      {
+        "nombre": "GBP",
+        "v": 53.1,
+        "t": 116.0
+      },
+      {
+        "nombre": "JPY",
+        "v": 52.3,
+        "t": 116.4
+      },
+      {
+        "nombre": "EUR",
+        "v": 51.9,
+        "t": 116.8
+      },
+      {
+        "nombre": "AUD",
+        "v": 47.7,
+        "t": 117.2
+      }
+    ],
+    "tLogo": 121.9
+  },
+  "marcador": {
+    "titulo": "PMI flash · octubre 2026 · compuesto",
+    "filas": [
+      {
+        "codigo": "USD",
+        "v": 57.6,
+        "sep": 58.4,
+        "t": 0.55
+      },
+      {
+        "codigo": "GBP",
+        "v": 53.1,
+        "sep": 52.0,
+        "t": 0.85
+      },
+      {
+        "codigo": "JPY",
+        "v": 52.3,
+        "sep": 52.3,
+        "t": 1.15
+      },
+      {
+        "codigo": "EUR",
+        "v": 51.9,
+        "sep": 53.1,
+        "t": 1.45
+      },
+      {
+        "codigo": "AUD",
+        "v": 47.7,
+        "sep": 51.3,
+        "t": 1.75
+      }
+    ],
+    "tContraccion": 2.8,
+    "tLinea": 9.6,
+    "tCrece": 10.6,
+    "tContrae": 12.6,
+    "fin": 14.4
+  }
+}

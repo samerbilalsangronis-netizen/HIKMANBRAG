@@ -1,0 +1,15 @@
+# Llaves de servicios (Higgsfield, etc.)
+.env
+.env.*
+
+# Videos y renders: no se suben
+out/
+*.mp4
+*.mov
+*.wav
+
+# Dependencias y builds
+node_modules/
+hikman-datos/build/
+.DS_Store
+__pycache__/

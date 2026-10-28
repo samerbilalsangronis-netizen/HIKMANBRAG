@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <!--css:hikman2-->
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #0c0d0f; }
+      #root { width: 100%; height: 100%; position: relative; overflow: hidden; color: var(--hueso); }
+      .full { position: absolute; inset: 0; }
+      .ruido { position: absolute; font: 800 74px/1 "Barlow"; text-transform: uppercase; opacity: 0; white-space: nowrap; }
+      .letra { display: inline-block; font: 800 230px/1 "Barlow"; color: var(--hueso); width: 150px; text-align: center; }
+      .punto { display: inline-block; width: 20px; height: 20px; border-radius: 10px; background: var(--gris); margin: 0 4px; vertical-align: 40px; }
+      .fila-hk { position: absolute; left: 0; right: 0; top: 196px; text-align: center; font: 800 40px/1 "Mono"; letter-spacing: .5em; color: rgba(139,144,152,.35); }
+    </style>
+  </head>
+  <body>
+    <!-- Bienvenida H.I.K.M.A.N.: gancho 0-8,7 y cierre 38,95-44,2. Las letras (8,7-38,95) son Remotion. -->
+    <div id="root" data-composition-id="main" data-start="0" data-duration="44.2" data-width="1080" data-height="1920">
+      <div id="fondo" class="clip full" data-start="0" data-duration="44.2" data-track-index="0">
+        <div class="k-fondo"></div><div class="k-reticula" id="ret"></div>
+        <div id="barra"></div>
+        <div id="balanza"></div>
+      </div>
+
+      <!-- Gancho: el choque (0 - 4,6) -->
+      <div id="s1" class="clip full" data-start="0" data-duration="4.7" data-track-index="1">
+        <div id="g-ring" class="full">
+          <img id="g-toro" src="assets/hikman/toro.png" style="position: absolute; left: 10px; top: 380px; height: 720px" alt="" />
+          <img id="g-oso" src="assets/hikman/oso.png" style="position: absolute; left: 520px; top: 440px; height: 600px" alt="" />
+        </div>
+        <div class="full" id="g-flash" style="background: var(--hueso); opacity: 0"></div>
+        <div class="k-frase oso" id="g-f1" style="top: 1250px; font-size: 104px">El mercado es una <em>pelea</em></div>
+        <div class="k-frase" id="g-f2" style="top: 1250px; font-size: 96px">Nosotros no tomamos <em>bandos</em></div>
+      </div>
+
+      <!-- Los datos y las seis letras (4,6 - 8,7) -->
+      <div id="s2" class="clip full" data-start="4.6" data-duration="4.1" data-track-index="2">
+        <div id="n-no" style="position: absolute; left: 0; right: 0; top: 600px; text-align: center; font: 800 150px/0.95 'Barlow'; text-transform: uppercase">Leemos<br /><span style="color: var(--toro)">los datos.</span></div>
+        <div id="n-esto" style="position: absolute; left: 0; right: 0; top: 560px; text-align: center; font: 600 34px/1 'Mono'; letter-spacing: .3em; color: var(--gris)">ESTO ES</div>
+        <div id="n-letras" style="position: absolute; left: 0; right: 0; top: 640px; text-align: center; white-space: nowrap">
+          <span class="letra" id="l0">H</span><span class="letra" id="l1">I</span><span class="letra" id="l2">K</span><span class="letra" id="l3">M</span><span class="letra" id="l4">A</span><span class="letra" id="l5">N</span>
+        </div>
+        <div class="fila-hk" id="n-fila">HIKMAN</div>
+      </div>
+
+      <!-- Cierre (38,95 - 44,2) -->
+      <div id="s3" class="clip full" data-start="38.95" data-duration="5.25" data-track-index="3">
+        <div class="fila-hk" style="color: var(--hueso)">HIKMAN</div>
+        <div id="c-ring" class="full">
+          <img id="c-toro" src="assets/hikman/toro.png" style="position: absolute; left: 70px; top: 360px; height: 560px" alt="" />
+          <img id="c-oso" src="assets/hikman/oso.png" style="position: absolute; left: 560px; top: 410px; height: 470px" alt="" />
+        </div>
+        <img id="c-logo" src="assets/hikman/logo-blanco.png" style="position: absolute; left: 190px; top: 360px; width: 700px" alt="" />
+        <div class="k-frase" id="c-f1" style="top: 1130px; font-size: 104px">Bienvenido, <em style="color: var(--toro)">inversor</em></div>
+        <div id="c-nota" style="position: absolute; left: 0; right: 0; top: 1420px; text-align: center; font: 600 22px/1 'Mono'; letter-spacing: .14em; color: var(--gris)">CONTENIDO EDUCATIVO · NO ES ASESORÍA FINANCIERA</div>
+      </div>
+    </div>
+    <!--js:helpers-->
+    <!--js:hikman2-->
+    <script>
+      // La Balanza de este video usa sus propias marcas (datos/hikman/bienvenida.json)
+      window.SEMANA = { balanza: [[0, 0], [0.15, 0.95], [0.5, -0.95], [0.85, 0.9], [1.2, -0.85], [1.55, 0.7], [1.9, -0.6], [2.4, 0], [24.6, 0.45], [25.1, -0.35], [25.6, 0.18], [26.1, 0]], publicacion: "Hikman Capital", fecha: "", temas: [] };
+      const tl = gsap.timeline({ paused: true });
+      K.barra(document.getElementById("barra"));
+      document.querySelector("#barra .k-pub").innerHTML = "<b>HIKMAN CAPITAL</b><br />QUIÉNES SOMOS";
+      K.balanza(document.getElementById("balanza"));
+      K.moverBalanza(tl, "#balanza .k-marca", 0, 44.2);
+
+      // Gancho: el toro y el oso chocan en el primer instante
+      spring(tl, "#g-toro", { x: -760, rotation: -10 }, { x: 0, rotation: 0 }, 0.0, SECO);
+      spring(tl, "#g-oso", { x: 760, rotation: 10 }, { x: 0, rotation: 0 }, 0.0, SECO);
+      tl.fromTo("#g-flash", { opacity: 0 }, { opacity: 0.55, duration: 0.04, ease: "none" }, 0.16);
+      tl.to("#g-flash", { opacity: 0, duration: 0.25, ease: "power2.out" }, 0.2);
+      tl.fromTo("#g-ring", { x: 0, y: 0 }, { keyframes: [{ x: -22, y: 6, duration: 0.04 }, { x: 18, y: -5, duration: 0.04 }, { x: -12, y: 4, duration: 0.04 }, { x: 8, duration: 0.04 }, { x: 0, y: 0, duration: 0.05 }] }, 0.16);
+      // empujan una vez mas a mitad de la frase
+      tl.to("#g-ring", { keyframes: [{ x: -10, duration: 0.04 }, { x: 8, duration: 0.04 }, { x: 0, duration: 0.05 }] }, 1.15);
+      spring(tl, "#g-f1", { opacity: 0, scale: 1.3 }, { opacity: 1, scale: 1 }, 0.55, SECO);
+      tl.to("#g-f1", { opacity: 0, y: -30, duration: 0.15 }, 2.2);
+      // se separan: Hikman no toma bandos
+      tl.to("#g-toro", { x: -330, opacity: 0.25, duration: 0.6, ease: "power3.out" }, 2.2);
+      tl.to("#g-oso", { x: 330, opacity: 0.25, duration: 0.6, ease: "power3.out" }, 2.2);
+      spring(tl, "#g-f2", { opacity: 0, y: 40 }, { opacity: 1, y: 0 }, 2.38, ESTANDAR);
+      tl.to(["#g-ring", "#g-f2"], { opacity: 0, duration: 0.25 }, 4.4);
+      tl.fromTo(["#barra", "#ret"], { opacity: 0 }, { opacity: 0, duration: 0.01 }, 0);
+      tl.to(["#barra", "#ret"], { opacity: 1, duration: 0.5, ease: "power1.out" }, 4.6);
+
+      // "Leemos los datos." y las letras
+      spring(tl, "#n-no", { opacity: 0, y: 30 }, { opacity: 1, y: 0 }, 4.7, ESTANDAR);
+      tl.to("#n-no", { opacity: 0, y: -60, duration: 0.25, ease: "power2.in" }, 6.65);
+      spring(tl, "#n-esto", { opacity: 0, y: 16 }, { opacity: 1, y: 0 }, 6.9, SECO);
+      for (let i = 0; i < 6; i++) spring(tl, "#l" + i, { opacity: 0, y: -260 }, { opacity: 1, y: 0 }, 7.1 + i * 0.16, SECO);
+      // las letras suben a la fila de arriba (empalma con Remotion)
+      tl.to("#n-esto", { opacity: 0, duration: 0.2 }, 8.25);
+      tl.to("#n-letras", { y: -444, scale: 0.18, transformOrigin: "50% 0%", opacity: 0, duration: 0.45, ease: "power3.in" }, 8.25);
+      tl.fromTo("#n-fila", { opacity: 0 }, { opacity: 1, duration: 0.2 }, 8.45);
+
+      // Cierre: choque del toro y el oso, logo y bienvenida
+      spring(tl, "#c-toro", { x: -700, rotation: -8 }, { x: 0, rotation: 0 }, 38.97, SECO);
+      spring(tl, "#c-oso", { x: 700, rotation: 8 }, { x: 0, rotation: 0 }, 38.97, SECO);
+      tl.fromTo("#c-ring", { x: 0 }, { keyframes: [{ x: -16, duration: 0.04 }, { x: 12, duration: 0.04 }, { x: -7, duration: 0.04 }, { x: 0, duration: 0.05 }] }, 39.21);
+      tl.to("#c-ring", { opacity: 0, scale: 1.15, transformOrigin: "50% 50%", duration: 0.3, ease: "power2.in" }, 39.55);
+      spring(tl, "#c-logo", { opacity: 0, scale: 0.75, transformOrigin: "50% 50%" }, { opacity: 1, scale: 1 }, 39.6, PESADO);
+      spring(tl, "#c-f1", { opacity: 0, y: 50 }, { opacity: 1, y: 0 }, 40.8, ESTANDAR);
+      spring(tl, "#c-nota", { opacity: 0, y: 16 }, { opacity: 1, y: 0 }, 41.55, SECO);
+
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
