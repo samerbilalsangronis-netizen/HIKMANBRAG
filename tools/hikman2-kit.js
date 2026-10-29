@@ -21,7 +21,7 @@ window.K = {
   },
   barra(el) {
     const S = window.SEMANA;
-    el.innerHTML = '<div class="k-barra"><img src="assets/hikman/logo-blanco.png" alt="" /><div class="k-pub"><b>' + S.publicacion + "</b><br />Semana al " + S.fecha + '</div></div><div class="k-linea"></div>';
+    el.innerHTML = '<div class="k-barra"><img src="assets/hikman/logo-blanco.png" alt="" /><div class="k-pub"><b>' + S.publicacion + "</b><br />" + (S.etiqueta || "Semana al " + S.fecha) + '</div></div><div class="k-linea"></div>';
   },
   tema(el, t) {
     const m = this.temaEn(t);

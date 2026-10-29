@@ -115,8 +115,11 @@ def build(src_path, comp):
     if logo_ts.exists():
         out = out.replace("<!--logo-ts-->", logo_ts.read_text().replace("<svg ", '<svg class="logo-ts" ', 1))
     out = split_scenes(out, comp)
-    out = out.replace("<!--css:hikman-->", "<style>\n" + (ROOT / "tools/hikman-kit.css").read_text() + "\n</style>")
-    out = out.replace("<!--js:hikman-->", "<script>\nwindow.EDICION = " + (ROOT / "datos/hikman/edicion.json").read_text() + ";\n" + (ROOT / "tools/hikman-kit.js").read_text() + "\n</script>")
+    # estilo antiguo (papel): solo si la pieza lo usa
+    if "<!--css:hikman-->" in out:
+        out = out.replace("<!--css:hikman-->", "<style>\n" + (ROOT / "tools/hikman-kit.css").read_text() + "\n</style>")
+    if "<!--js:hikman-->" in out:
+        out = out.replace("<!--js:hikman-->", "<script>\nwindow.EDICION = " + (ROOT / "datos/hikman/edicion.json").read_text() + ";\n" + (ROOT / "tools/hikman-kit.js").read_text() + "\n</script>")
     out = out.replace("<!--css:hikman2-->", "<style>\n" + (ROOT / "tools/hikman2-kit.css").read_text() + "\n</style>")
     out = out.replace("<!--js:hikman2-->", "<script>\nwindow.SEMANA = " + (ROOT / "datos/hikman/semana.json").read_text() + ";\n" + (ROOT / "tools/hikman2-kit.js").read_text() + "\n</script>")
     out = out.replace("<!--js:helpers-->", "<script>\n" + (ROOT / "tools/hf-helpers.js").read_text() + "\n</script>")

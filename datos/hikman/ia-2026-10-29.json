@@ -1,0 +1,96 @@
+{
+  "marca": "Hikman Capital",
+  "publicacion": "Resultados · IA",
+  "etiqueta": "29.10.2026",
+  "duracion": 87.0,
+  "nota": "Tiempos en segundos del video final. Fuentes en docs/hikman/investigacion-alphabet-microsoft-2026-10-29.md",
+  "fuente": "Fuente: Alphabet y Microsoft (8-K, 28.10.2026) · CNBC · Reuters",
+  "remotion": { "inicio": 13.3, "fin": 77.8 },
+  "voz": [
+    ["f01", 0.3], ["f02", 6.8], ["f03", 13.6], ["f04", 17.5], ["f05", 23.9], ["f06", 31.1], ["f07", 38.0], ["f08", 43.3],
+    ["f09", 49.4], ["f10", 53.7], ["f11", 56.3], ["f12", 61.6], ["f13", 64.4], ["f14", 71.2], ["f15", 78.1], ["f16", 80.6]
+  ],
+  "totalTemas": 3,
+  "temas": [
+    { "n": 1, "nombre": "Alphabet", "inicio": 13.3, "codigo": "GOOGL", "sub": "Alphabet · 3T 2026" },
+    { "n": 2, "nombre": "Microsoft", "inicio": 43.0, "codigo": "MSFT", "sub": "Microsoft · 1T fiscal 2027" },
+    { "n": 3, "nombre": "¿Por qué importa para FX?", "inicio": 53.4, "codigo": "FX", "sub": "Divisas y apetito por riesgo" }
+  ],
+  "velas": [
+    { "t": 13.3, "color": "oso" },
+    { "t": 43.0, "color": "toro" },
+    { "t": 53.4, "color": "oso" },
+    { "t": 77.8, "color": "oso" }
+  ],
+  "balanza": [
+    [0, 0], [0.35, 0.6], [2.41, -0.3], [4.1, 0.1], [13.6, 0.3], [26.3, 0.5], [33.4, 0.6], [40.5, 0.75],
+    [43.5, 0.2], [45.4, -0.4], [52.2, -0.6], [56.3, -0.2], [61.6, 0.2], [69.5, 0.4], [75.1, 0.55]
+  ],
+  "secciones": [
+    { "tipo": "filas", "titulo": "Reacción tras el cierre", "t0": 13.3, "t1": 17.3,
+      "filas": [ { "sim": "GOOGL", "nombre": "Después del cierre", "valor": "−10,42%", "flecha": "▼", "tono": "oso", "detalle": "322,22 $ → 288,35 $", "t": 13.7, "tValor": 15.19, "tDetalle": 15.9 } ] },
+    { "tipo": "barras", "titulo": "Ingresos del trimestre", "t0": 17.3, "t1": 23.7, "max": 127577,
+      "barras": [
+        { "lab": "Real", "valor": "127.577 M$", "num": 127577, "tono": "neutro", "estilo": "lleno", "t": 18.73 },
+        { "lab": "Esperado", "valor": "127.220 M$", "num": 127220, "tono": "neutro", "estilo": "raya", "t": 20.2 }
+      ],
+      "sello": { "texto": "En línea", "tono": "neutro", "t": 22.52 } },
+    { "tipo": "barras", "titulo": "Beneficio por acción", "t0": 23.7, "t1": 30.9, "max": 3.02,
+      "barras": [
+        { "lab": "Real", "valor": "2,12 $", "num": 2.12, "tono": "oso", "estilo": "lleno", "t": 26.31 },
+        { "lab": "Esperado", "valor": "3,02 $", "num": 3.02, "tono": "neutro", "estilo": "raya", "t": 28.86 },
+        { "lab": "Hace un año", "valor": "2,87 $", "num": 2.87, "tono": "neutro", "estilo": "punteado", "t": 29.5 }
+      ],
+      "sello": { "texto": "Decepciona", "tono": "oso", "t": 25.1 } },
+    { "tipo": "barras", "titulo": "Inversión (capex) del trimestre", "t0": 30.9, "t1": 37.8, "max": 51355,
+      "barras": [
+        { "lab": "3T 2025", "valor": "23.953 M$", "num": 23953, "tono": "neutro", "estilo": "punteado", "t": 32.6 },
+        { "lab": "3T 2026", "valor": "51.355 M$", "num": 51355, "tono": "oso", "estilo": "lleno", "t": 33.35 }
+      ],
+      "sello": { "texto": "× 2,1", "tono": "oso", "t": 35.99 } },
+    { "tipo": "barras", "titulo": "La caja del trimestre", "t0": 37.8, "t1": 43.0, "max": 51355,
+      "barras": [
+        { "lab": "Entra · flujo operativo", "valor": "42.290 M$", "num": 42290, "tono": "toro", "estilo": "lleno", "t": 38.3 },
+        { "lab": "Sale · inversión", "valor": "51.355 M$", "num": 51355, "tono": "oso", "estilo": "lleno", "t": 39.1 }
+      ],
+      "total": { "lab": "Flujo de caja libre", "valor": "−9.065 M$", "tono": "oso", "t": 40.48 } },
+    { "tipo": "barras", "titulo": "La caja del trimestre", "t0": 43.0, "t1": 49.2, "max": 58000,
+      "barras": [
+        { "lab": "Entra · flujo operativo", "valor": "58.000 M$", "num": 58000, "tono": "toro", "estilo": "lleno", "t": 43.6 },
+        { "lab": "Sale · inversión", "valor": "39.367 M$", "num": 39367, "tono": "oso", "estilo": "lleno", "t": 44.4 }
+      ],
+      "total": { "lab": "Flujo de caja libre", "valor": "+18.633 M$", "tono": "toro", "t": 45.43 } },
+    { "tipo": "filas", "titulo": "Reacción tras el cierre", "t0": 49.2, "t1": 53.4,
+      "filas": [ { "sim": "MSFT", "nombre": "Después del cierre", "valor": "≈ +4%", "flecha": "▲", "tono": "toro", "detalle": "BPA ajustado 4,89 $ · esperado 4,73 $", "t": 49.5, "tValor": 52.22, "tDetalle": 52.7 } ] },
+    { "tipo": "filas", "titulo": "La IA en EE. UU.", "t0": 53.4, "t1": 64.2,
+      "filas": [
+        { "sim": "SOSTIENE", "nombre": "Buena parte del crecimiento", "valor": "INVERSIÓN IA", "flecha": "", "tono": "toro", "detalle": "Motor del crecimiento de EE. UU.", "t": 57.8, "tValor": 58.3, "tDetalle": 59.6 },
+        { "sim": "EXIGE", "nombre": "Mucho dinero", "valor": "FINANCIACIÓN", "flecha": "", "tono": "oso", "detalle": "Alphabet + Microsoft: ≈ 90.700 M$ en un trimestre", "t": 61.7, "tValor": 62.1, "tDetalle": 62.9 }
+      ] },
+    { "tipo": "columnas", "titulo": "El mercado separa", "t0": 64.2, "t1": 71.0,
+      "cols": [
+        { "tit": "Con caja propia", "sim": "MSFT", "valor": "+18.633", "tono": "toro", "t": 67.0 },
+        { "tit": "Caja en negativo", "sim": "GOOGL", "valor": "−9.065", "tono": "oso", "t": 68.4 }
+      ],
+      "pie": "Flujo de caja libre del trimestre, en millones de $" },
+    { "tipo": "filas", "titulo": "Si llega una corrección tecnológica", "t0": 71.0, "t1": 77.8,
+      "filas": [
+        { "sim": "SUBE", "nombre": "Demanda de", "valor": "LIQUIDEZ", "flecha": "▲", "tono": "neutro", "detalle": "Dinero que busca refugio", "t": 74.6, "tValor": 75.13, "tDetalle": 75.8 },
+        { "sim": "SUBE", "nombre": "Demanda de", "valor": "DEFENSIVOS", "flecha": "▲", "tono": "neutro", "detalle": "Activos de menor riesgo", "t": 76.0, "tValor": 76.55, "tDetalle": 77.0 }
+      ] }
+  ],
+  "frases": [
+    { "t": 13.6, "html": "Alphabet: <em>−10%</em> tras el cierre", "tono": "oso" },
+    { "t": 17.5, "html": "Ingresos <em>en línea</em>", "tono": "neutro" },
+    { "t": 23.9, "html": "El beneficio <em>decepcionó</em>", "tono": "oso" },
+    { "t": 31.1, "html": "Inversión: <em>más del doble</em>", "tono": "oso" },
+    { "t": 38.0, "html": "<em>Salida de caja</em> de 9.000 M$", "tono": "oso" },
+    { "t": 43.3, "html": "Microsoft: <em>flujo libre</em> de 18.600 M$", "tono": "toro" },
+    { "t": 49.4, "html": "Sus acciones: <em>+4%</em>", "tono": "toro" },
+    { "t": 53.7, "html": "¿Por qué importa <em>para FX</em>?", "tono": "neutro" },
+    { "t": 56.3, "html": "La IA <em>sostiene</em> el crecimiento", "tono": "toro" },
+    { "t": 61.6, "html": "Pero exige <em>financiación</em>", "tono": "oso" },
+    { "t": 64.4, "html": "Caja propia vs. <em>deuda cara</em>", "tono": "oso" },
+    { "t": 71.2, "html": "Más demanda de <em>liquidez</em>", "tono": "oso" }
+  ]
+}
