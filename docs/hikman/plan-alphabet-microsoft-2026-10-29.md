@@ -47,3 +47,11 @@ Investigación: `docs/hikman/investigacion-alphabet-microsoft-2026-10-29.md`.
 - **Microsoft:** ¿"alrededor de un 4%" (CNBC) o el ~3% de tu texto? Las fuentes van del 2,7% al 5% según la hora.
 - **Cifra de bonos (220.000 M$):** ¿la incluimos en el tema 3? Es un dato extra mío para "exige mucha financiación".
 - **Tarjeta "Próxima publicación":** ¿la añadimos al cierre?
+
+## Decisiones del usuario (29.10)
+- Microsoft: "alrededor de un 4%". Sin el dato de los bonos. Cierre con "Próxima publicación: los tipos de interés".
+
+## Entregado
+- `out/ia-2026-10-29/hikman-ia-2026-10-29.mp4`, 87 s, −14,6 LUFS. Gancho y cierre en Hyperframes (`fuentes/ia-*.src.html`), datos en Remotion (`Resultados`), ensamblado con `tools/ensamblar_tramos.py`.
+- Textos de pantalla míos (no son datos): "Dos cajas distintas", "Motor del crecimiento de EE. UU.", "Dinero que busca refugio", "Activos de menor riesgo", "Caja propia vs. deuda cara".
+- Dato extra en pantalla: Alphabet + Microsoft ≈ 90.700 M$ de inversión en un trimestre (51.355 + 39.367, de los 8-K).
