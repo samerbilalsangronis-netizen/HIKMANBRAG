@@ -68,3 +68,10 @@ Investigación: `docs/hikman/investigacion-tipos-2026-10-30.md`. Base técnica: 
 2. **Salida de Lagarde** en febrero de 2027: no viene en tu texto. ¿La añado como frase o rótulo?
 3. **Datos sin confirmar:** el 98% y los "22 de 27 economistas" del RBNZ, la frase de Ueda sobre "condiciones acomodaticias" y lo de Takaichi y EE. UU. Mi propuesta es poner "cerca del 90%" y "casi por unanimidad", y dejar fuera lo demás. ¿Tienes la fuente de alguno?
 4. **Tarjeta "Próxima publicación":** ¿la añadimos? ¿Con qué tema?
+
+## Decisiones del usuario (01.11)
+- Formato **reel corto** (~70 s) en vez de 3 min, con **portada** de gancho visual ("Tipos de interés · ¿Qué pasó?").
+- Sin el 10 años de EE. UU. · Con la salida de Lagarde · RBNZ: 98% y "22 de 27 economistas" (texto del usuario; no confirmados en la web) · Japón sin la frase de Ueda/Takaichi · Sin "próxima publicación".
+
+## Construcción
+- Voz: 13 frases (`out/tipos-2026-10-30/voz`). Gancho y cierre: `fuentes/tipos-brag.src.html`, `fuentes/tipos-cierre.src.html`. Datos: composición `Tipos` (Remotion) con `datos/hikman/tipos-2026-10-30.json`. Portada: still `PortadaTipos`.

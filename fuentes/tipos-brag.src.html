@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <!--css:hikman2-->
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #0c0d0f; }
+      #root { width: 100%; height: 100%; position: relative; overflow: hidden; color: var(--hueso); }
+      .full { position: absolute; inset: 0; }
+      #tit { position: absolute; left: 0; right: 0; top: 300px; text-align: center; font: 800 200px/0.86 "Barlow"; text-transform: uppercase; }
+      #sub { position: absolute; left: 0; right: 0; top: 250px; text-align: center; font: 700 30px/1 "Mono"; letter-spacing: .3em; color: var(--gris); }
+      .fila { position: absolute; left: 90px; right: 90px; height: 104px; border-bottom: 2px solid var(--linea); opacity: 0; }
+      .fila .b { position: absolute; left: 22px; top: 20px; font: 800 68px/1 "Barlow"; }
+      .fila .d { position: absolute; left: 240px; top: 38px; font: 600 28px/1 "Mono"; letter-spacing: .1em; color: var(--gris); }
+      .fila .t { position: absolute; right: 120px; top: 24px; font: 800 60px/1 "Mono"; }
+      .fila .s { position: absolute; right: 26px; top: 20px; width: 70px; text-align: center; font: 800 66px/1 "Mono"; opacity: 0; }
+      .fila .fondo { position: absolute; inset: 0; opacity: 0; }
+      #sello { position: absolute; left: 280px; top: 1306px; padding: 6px 22px; border: 6px solid var(--oso); color: var(--oso); font: 800 58px/1 "Barlow"; text-transform: uppercase; transform: rotate(-6deg); background: rgba(12,13,15,.85); opacity: 0; }
+    </style>
+  </head>
+  <body>
+    <!-- Reel tipos de interes 30.10 · gancho (0-5,6) y apertura (5,6-7,6). Tiempos globales = locales. Datos: datos/hikman/tipos-2026-10-30.json -->
+    <div id="root" data-composition-id="main" data-start="0" data-duration="7.6" data-width="1080" data-height="1920">
+      <div id="fondo" class="clip full" data-start="0" data-duration="7.6" data-track-index="0">
+        <div class="k-fondo"></div><div class="k-reticula"></div>
+        <div id="barra"></div>
+        <div id="balanza"></div>
+      </div>
+
+      <div id="s1" class="clip full" data-start="0" data-duration="7.6" data-track-index="1">
+        <div id="sub">5 BANCOS CENTRALES · 1 SEMANA</div>
+        <div id="tit">Tipos de<br /><span style="color: var(--toro)">inter</span><span style="color: var(--oso)">és</span></div>
+        <!-- marcador: cada fila se escribe con "cinco bancos centrales"; "=" con "cuatro pausas"; ▲ con "una subida"; sello con "sorpresa" -->
+        <div class="fila" id="r1" style="top: 760px"><div class="fondo"></div><div class="b">FED</div><div class="d">USD</div><div class="t">3,75–4,00%</div><div class="s" style="color: var(--hueso)">=</div></div>
+        <div class="fila" id="r2" style="top: 870px"><div class="fondo"></div><div class="b">BCE</div><div class="d">EUR</div><div class="t">2,50%</div><div class="s" style="color: var(--hueso)">=</div></div>
+        <div class="fila" id="r3" style="top: 980px"><div class="fondo" style="background: rgba(47,191,113,.12)"></div><div class="b" id="r3b">BOC</div><div class="d">CAD</div><div class="t">2,50%</div><div class="s" style="color: var(--toro)">▲</div></div>
+        <div class="fila" id="r4" style="top: 1090px"><div class="fondo"></div><div class="b">BOJ</div><div class="d">JPY</div><div class="t">1,25%</div><div class="s" style="color: var(--hueso)">=</div></div>
+        <div class="fila" id="r5" style="top: 1200px"><div class="fondo" style="background: rgba(229,72,77,.14)"></div><div class="b" id="r5b">RBNZ</div><div class="d">NZD</div><div class="t">2,75%</div><div class="s" style="color: var(--oso)">=</div></div>
+        <div id="sello">Sorpresa</div>
+        <div class="full" id="barrido" style="background: var(--hueso); opacity: 0"></div>
+        <div class="k-frase" id="a-f1" style="top: 1300px; font-size: 104px">Buenos días, <em style="color: var(--toro)">inversor</em></div>
+        <div id="vela-c"></div>
+      </div>
+    </div>
+    <!--js:helpers-->
+    <!--js:hikman2-->
+    <script>
+      window.SEMANA = { publicacion: "Informe semanal", etiqueta: "Semana al 30.10.2026", temas: [],
+        balanza: [[0, 0], [12.96, 0.3]] };
+      const tl = gsap.timeline({ paused: true });
+      K.barra(document.getElementById("barra"));
+      K.balanza(document.getElementById("balanza"));
+      K.moverBalanza(tl, "#balanza .k-marca", 0, 7.6);
+      document.getElementById("vela-c").outerHTML = K.velaHTML("vc", "oso");
+      const destello = (t) => {
+        tl.fromTo("#barrido", { opacity: 0 }, { opacity: 0.18, duration: 0.03, ease: "none", immediateRender: false }, t - 0.02);
+        tl.to("#barrido", { opacity: 0, duration: 0.14, ease: "power2.out" }, t + 0.01);
+      };
+      tl.fromTo("#barrido", { opacity: 0 }, { opacity: 0, duration: 0.01 }, 0);
+
+      // el titulo ya se ve en el primer fotograma (coincide con la portada); solo un pequeno asentamiento
+      tl.fromTo("#tit", { scale: 1.04 }, { scale: 1, duration: 0.6, ease: "power3.out" }, 0);
+      // "Cinco bancos centrales" (0,35-1,4): las cinco filas entran en cascada
+      for (let i = 1; i <= 5; i++) spring(tl, "#r" + i, { opacity: 0, x: -70 }, { opacity: 1, x: 0 }, 0.35 + (i - 1) * 0.18, SECO);
+      // "cuatro pausas" (1,86): el "=" en las cuatro que no se movieron
+      ["#r1", "#r2", "#r4", "#r5"].forEach((r, i) => spring(tl, r + " .s", { opacity: 0, scale: 1.6 }, { opacity: 1, scale: 1 }, 1.86 + i * 0.08, SECO));
+      destello(1.86);
+      // "una subida" (3,05): Canada en verde
+      spring(tl, "#r3 .s", { opacity: 0, y: 30 }, { opacity: 1, y: 0 }, 3.05, SECO);
+      tl.fromTo("#r3 .fondo", { opacity: 0 }, { opacity: 1, duration: 0.2, immediateRender: false }, 3.05);
+      tl.fromTo("#r3b", { color: "#f2efe9" }, { color: "#2fbf71", duration: 0.2, immediateRender: false }, 3.05);
+      destello(3.05);
+      // "y una sorpresa" (4,75): Nueva Zelanda en rojo con sello
+      tl.fromTo("#r5 .fondo", { opacity: 0 }, { opacity: 1, duration: 0.2, immediateRender: false }, 4.75);
+      tl.fromTo("#r5b", { color: "#f2efe9" }, { color: "#e5484d", duration: 0.2, immediateRender: false }, 4.75);
+      spring(tl, "#sello", { opacity: 0, scale: 1.8 }, { opacity: 1, scale: 1 }, 4.75, { ease: "power4.out", duration: 0.25 });
+      destello(4.75);
+
+      // Apertura: el marcador sube y aparece el saludo
+      tl.to(["#r1", "#r2", "#r3", "#r4", "#r5", "#sello"], { opacity: 0, y: -40, duration: 0.2, ease: "power2.in", stagger: 0.03 }, 5.55);
+      spring(tl, "#a-f1", { opacity: 0, y: 50 }, { opacity: 1, y: 0 }, 5.75, ESTANDAR);
+      tl.fromTo("#a-f1", { opacity: 0 }, { opacity: 0, duration: 0.01 }, 0);
+      K.vela(tl, "vc", 7.6, null);
+
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

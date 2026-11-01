@@ -11,6 +11,7 @@ import { Probabilidad2 } from "./Probabilidad2";
 import { Tablero } from "./Tablero";
 import { metaPmi, Pmi } from "./Pmi";
 import { metaResultados, ResultadosComp } from "./Resultados";
+import { PortadaTipos } from "./PortadaTipos";
 
 type Props = { edicion: Edicion | null };
 
@@ -47,7 +48,9 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="Divisa-gbp" component={Divisa} durationInFrames={300} fps={30} width={1080} height={1920} defaultProps={{ s: null, clave: "gbp" }} calculateMetadata={metaDivisa("gbp")} />
     <Composition id="Divisa-oce" component={Divisa} durationInFrames={300} fps={30} width={1080} height={1920} defaultProps={{ s: null, clave: "oce" }} calculateMetadata={metaDivisa("oce")} />
     <Composition id="Pmi" component={Pmi} durationInFrames={300} fps={30} width={1080} height={1920} defaultProps={{ d: null }} calculateMetadata={metaPmi} />
-    <Composition id="Resultados" component={ResultadosComp} durationInFrames={300} fps={30} width={1080} height={1920} defaultProps={{ r: null }} calculateMetadata={metaResultados} />
+    <Composition id="Resultados" component={ResultadosComp} durationInFrames={300} fps={30} width={1080} height={1920} defaultProps={{ r: null }} calculateMetadata={metaResultados("ia.json")} />
+    <Composition id="Tipos" component={ResultadosComp} durationInFrames={300} fps={30} width={1080} height={1920} defaultProps={{ r: null }} calculateMetadata={metaResultados("tipos.json")} />
+    <Still id="PortadaTipos" component={PortadaTipos} width={1080} height={1920} />
     <Still id="Portada" component={Portada} width={1080} height={1920} />
   </>
 );

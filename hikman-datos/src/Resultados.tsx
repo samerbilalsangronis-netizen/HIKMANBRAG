@@ -19,14 +19,25 @@ export type Resultados = {
 };
 type Props = { r: Resultados | null };
 
-export const metaResultados: CalculateMetadataFunction<Props> = async () => {
-  const r: Resultados = await (await fetch(staticFile("ia.json"))).json();
+// cada pieza lee su propio JSON de public/ (copia de datos/hikman/...)
+export const metaResultados = (archivo: string): CalculateMetadataFunction<Props> => async () => {
+  const r: Resultados = await (await fetch(staticFile(archivo))).json();
   return { props: { r }, durationInFrames: Math.round((r.remotion.fin - r.remotion.inicio) * 30) };
 };
 
 const ease3 = (x: number) => 1 - Math.pow(1 - x, 3);
 const easeIn3 = (x: number) => x * x * x;
 const clamp = (x: number) => Math.min(1, Math.max(0, x));
+
+const Sello: React.FC<{ sello: NonNullable<Seccion["sello"]>; at: (t: number) => number; fps: number }> = ({ sello, at, fps }) => {
+  const e = spring({ frame: at(sello.t), fps, config: SECO });
+  const c = sello.tono === "neutro" ? K.hueso : color(sello.tono);
+  return (
+    <div style={{ position: "absolute", right: 70, top: 418, padding: "10px 26px", border: `5px solid ${c}`, color: c, font: "800 54px/1 Barlow", textTransform: "uppercase", rotate: "-5deg", opacity: e, scale: `${1.6 - 0.6 * e}` }}>
+      {sello.texto}
+    </div>
+  );
+};
 
 const Filas: React.FC<{ filas: Fila[]; at: (t: number) => number; fps: number }> = ({ filas, at, fps }) => (
   <>
@@ -72,15 +83,7 @@ const Barras: React.FC<{ s: Seccion; at: (t: number) => number; fps: number }> =
           </div>
         );
       })}
-      {s.sello && (() => {
-        const e = spring({ frame: at(s.sello.t), fps, config: SECO });
-        const c = s.sello.tono === "neutro" ? K.hueso : color(s.sello.tono);
-        return (
-          <div style={{ position: "absolute", right: 70, top: 452, padding: "10px 26px", border: `5px solid ${c}`, color: c, font: "800 54px/1 Barlow", textTransform: "uppercase", rotate: "-5deg", opacity: e, scale: `${1.6 - 0.6 * e}` }}>
-            {s.sello.texto}
-          </div>
-        );
-      })()}
+      {s.sello && <Sello sello={s.sello} at={at} fps={fps} />}
       {s.total && (() => {
         const e = spring({ frame: at(s.total.t), fps, config: SECO });
         const c = color(s.total.tono);
@@ -159,6 +162,7 @@ export const ResultadosComp: React.FC<Props> = ({ r }) => {
           <span style={{ color: K.gris }}>▸ </span>{sec.titulo}
         </div>
         {sec.tipo === "filas" && <Filas filas={sec.filas!} at={at} fps={fps} />}
+        {sec.tipo === "filas" && sec.sello && <Sello sello={sec.sello} at={at} fps={fps} />}
         {sec.tipo === "barras" && <Barras s={sec} at={at} fps={fps} />}
         {sec.tipo === "columnas" && <Columnas s={sec} at={at} fps={fps} />}
       </div>

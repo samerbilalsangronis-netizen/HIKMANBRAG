@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <!--css:hikman2-->
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #0c0d0f; }
+      #root { width: 100%; height: 100%; position: relative; overflow: hidden; color: var(--hueso); }
+      .full { position: absolute; inset: 0; }
+    </style>
+  </head>
+  <body>
+    <!-- Reel tipos de interes 30.10 · cierre (sin proxima publicacion). Tramo global 66,3 - 71,5. -->
+    <div id="root" data-composition-id="main" data-start="0" data-duration="5.2" data-width="1080" data-height="1920">
+      <div id="fondo" class="clip full" data-start="0" data-duration="5.2" data-track-index="0">
+        <div class="k-fondo"></div><div class="k-reticula"></div>
+        <div id="barra"></div>
+        <div id="balanza"></div>
+      </div>
+      <div id="s1" class="clip full" data-start="0" data-duration="5.2" data-track-index="1">
+        <div id="c-tit" style="position: absolute; left: 60px; right: 60px; top: 420px; text-align: center; font: 800 96px/0.95 'Barlow'; text-transform: uppercase">Ese es el resumen<br />de la semana</div>
+        <img id="c-logo" src="assets/hikman/logo-blanco.png" style="position: absolute; left: 230px; top: 680px; width: 620px" alt="" />
+        <div id="c-nota" style="position: absolute; left: 0; right: 0; top: 1410px; text-align: center; font: 600 22px/1 'Mono'; letter-spacing: .14em; color: var(--gris)">CONTENIDO EDUCATIVO · NO ES ASESORÍA FINANCIERA</div>
+        <div id="vela-d"></div>
+      </div>
+    </div>
+    <!--js:helpers-->
+    <!--js:hikman2-->
+    <script>
+      window.SEMANA = { publicacion: "Informe semanal", etiqueta: "Semana al 30.10.2026", temas: [],
+        balanza: [[0, 0], [64.4, 0.5]] };
+      const tl = gsap.timeline({ paused: true });
+      const T0 = 66.3, G = (t) => t - T0;
+      K.barra(document.getElementById("barra"));
+      K.balanza(document.getElementById("balanza"));
+      K.moverBalanza(tl, "#balanza .k-marca", T0, 5.2);
+      document.getElementById("vela-d").outerHTML = K.velaHTML("vd", "oso");
+      K.vela(tl, "vd", null, 0);
+
+      spring(tl, "#c-tit", { opacity: 0, y: 60 }, { opacity: 1, y: 0 }, G(66.65), ESTANDAR);
+      spring(tl, "#c-logo", { opacity: 0, scale: 0.75, transformOrigin: "50% 50%" }, { opacity: 1, scale: 1 }, G(67.7), PESADO);
+      spring(tl, "#c-nota", { opacity: 0, y: 16 }, { opacity: 1, y: 0 }, G(68.2), SECO);
+      tl.fromTo(["#c-tit", "#c-logo", "#c-nota"], { opacity: 0 }, { opacity: 0, duration: 0.01 }, 0);
+
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
