@@ -157,7 +157,7 @@ export const ResultadosComp: React.FC<Props> = ({ r }) => {
         <div style={{ font: "600 24px/1 Mono", letterSpacing: ".14em", color: K.gris, textTransform: "uppercase", marginTop: 12 }}>{tema.sub}</div>
       </div>
       {/* seccion actual */}
-      <div key={sec.t0} style={{ position: "absolute", inset: 0, opacity: sIn * (1 - sOut), translate: `0 ${off + 30 * (1 - sIn) - 40 * sOut}px` }}>
+      <div style={{ position: "absolute", inset: 0, opacity: sIn * (1 - sOut), translate: `0 ${off + 30 * (1 - sIn) - 40 * sOut}px` }}>
         <div style={{ position: "absolute", left: 70, top: 470, font: "700 26px/1 Mono", letterSpacing: ".14em", color: K.hueso, textTransform: "uppercase" }}>
           <span style={{ color: K.gris }}>▸ </span>{sec.titulo}
         </div>
