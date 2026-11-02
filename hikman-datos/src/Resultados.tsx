@@ -6,7 +6,7 @@ import { balanzaP, color, ESTANDAR, Frase, K, Rodar, SECO, Semana, useLocal } fr
 // secciones de filas, barras o columnas. Todo sale de public/ia.json (copia de datos/hikman/ia-<fecha>.json).
 type Fila = { sim: string; nombre: string; valor: string; flecha: string; tono: string; detalle: string; t: number; tValor: number; tDetalle: number };
 type Barra = { lab: string; valor: string; num: number; tono: string; estilo: "lleno" | "raya" | "punteado"; t: number };
-type Col = { tit: string; sim: string; valor: string; tono: string; t: number };
+type Col = { tit: string; sim: string; valor: string; unidad?: string; tono: string; t: number };
 type Seccion = {
   tipo: "filas" | "barras" | "columnas"; titulo: string; t0: number; t1: number;
   filas?: Fila[]; barras?: Barra[]; max?: number; sello?: { texto: string; tono: string; t: number };
@@ -108,11 +108,11 @@ const Columnas: React.FC<{ s: Seccion; at: (t: number) => number; fps: number }>
       return (
         <div key={i} style={{ position: "absolute", top: 540, left: i === 0 ? 70 : 555, width: 455, height: 560, border: `4px solid ${col}`, opacity: e, translate: `0 ${60 * (1 - e)}px`, textAlign: "center" }}>
           <div style={{ background: col, color: K.carbon, font: "800 46px/96px Barlow", textTransform: "uppercase" }}>{c.tit}</div>
-          <div style={{ marginTop: 60, font: "800 110px/1 Barlow" }}>{c.sim}</div>
+          <div style={{ marginTop: 60, font: `800 ${c.sim.length > 6 ? 90 : 110}px/1 Barlow` }}>{c.sim}</div>
           <div style={{ marginTop: 50, font: "800 74px/1 Mono", color: col, letterSpacing: "-.03em" }}>
             <Rodar valor={c.valor} f={at(c.t + 0.3)} semilla={c.sim} />
           </div>
-          <div style={{ marginTop: 18, font: "600 24px/1 Mono", color: K.gris, letterSpacing: ".1em" }}>M$</div>
+          {c.unidad && <div style={{ marginTop: 18, padding: "0 20px", font: "600 24px/1.3 Mono", color: K.gris, letterSpacing: ".1em", textTransform: "uppercase" }}>{c.unidad}</div>}
         </div>
       );
     })}

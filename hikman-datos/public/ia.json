@@ -69,8 +69,8 @@
       ] },
     { "tipo": "columnas", "titulo": "El mercado separa", "t0": 64.2, "t1": 71.0,
       "cols": [
-        { "tit": "Con caja propia", "sim": "MSFT", "valor": "+18.633", "tono": "toro", "t": 67.0 },
-        { "tit": "Caja en negativo", "sim": "GOOGL", "valor": "−9.065", "tono": "oso", "t": 68.4 }
+        { "tit": "Con caja propia", "sim": "MSFT", "valor": "+18.633", "unidad": "M$", "tono": "toro", "t": 67.0 },
+        { "tit": "Caja en negativo", "sim": "GOOGL", "valor": "−9.065", "unidad": "M$", "tono": "oso", "t": 68.4 }
       ],
       "pie": "Flujo de caja libre del trimestre, en millones de $" },
     { "tipo": "filas", "titulo": "Si llega una corrección tecnológica", "t0": 71.0, "t1": 77.8,

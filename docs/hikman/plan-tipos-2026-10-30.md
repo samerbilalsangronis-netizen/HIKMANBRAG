@@ -75,3 +75,8 @@ Investigación: `docs/hikman/investigacion-tipos-2026-10-30.md`. Base técnica: 
 
 ## Construcción
 - Voz: 13 frases (`out/tipos-2026-10-30/voz`). Gancho y cierre: `fuentes/tipos-brag.src.html`, `fuentes/tipos-cierre.src.html`. Datos: composición `Tipos` (Remotion) con `datos/hikman/tipos-2026-10-30.json`. Portada: still `PortadaTipos`.
+
+## Versión completa (02.11)
+- El usuario esperaba ~3 min: se construye la versión completa (171,5 s) además del reel.
+- Voz: f01, f02, f10–f13 del reel + g01–g24 (`out/tipos-2026-10-30/voz`). Datos: `datos/hikman/tipos-semana-2026-10-30.json` → composición `TiposSemana`. Gancho y cierre: `fuentes/tipos-semana-brag.src.html`, `fuentes/tipos-semana-cierre.src.html`. Misma portada (`PortadaTipos`).
+- Textos de apoyo propios: "Menos duro", "Ya se nota", "Dos señales opuestas", "Giro duro", "Se estanca", "Necesita tiempo", "Todos miran a diciembre".

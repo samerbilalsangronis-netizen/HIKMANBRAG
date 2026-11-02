@@ -50,6 +50,7 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="Pmi" component={Pmi} durationInFrames={300} fps={30} width={1080} height={1920} defaultProps={{ d: null }} calculateMetadata={metaPmi} />
     <Composition id="Resultados" component={ResultadosComp} durationInFrames={300} fps={30} width={1080} height={1920} defaultProps={{ r: null }} calculateMetadata={metaResultados("ia.json")} />
     <Composition id="Tipos" component={ResultadosComp} durationInFrames={300} fps={30} width={1080} height={1920} defaultProps={{ r: null }} calculateMetadata={metaResultados("tipos.json")} />
+    <Composition id="TiposSemana" component={ResultadosComp} durationInFrames={300} fps={30} width={1080} height={1920} defaultProps={{ r: null }} calculateMetadata={metaResultados("tipos-semana.json")} />
     <Still id="PortadaTipos" component={PortadaTipos} width={1080} height={1920} />
     <Still id="Portada" component={Portada} width={1080} height={1920} />
   </>

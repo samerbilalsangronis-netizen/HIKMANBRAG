@@ -1,0 +1,162 @@
+{
+  "marca": "Hikman Capital",
+  "publicacion": "Informe semanal",
+  "etiqueta": "Semana al 30.10.2026",
+  "duracion": 171.5,
+  "nota": "Informe semanal completo de tipos de interés. Tiempos en segundos del video final. Fuentes en docs/hikman/investigacion-tipos-2026-10-30.md. El 98% y '22 de 27' del RBNZ vienen del texto de Hikman (no confirmados en la web).",
+  "fuente": "Fuente: Fed, BCE, BoC, BoJ, RBNZ · CME FedWatch · Statistics Canada",
+  "remotion": { "inicio": 11.0, "fin": 166.0 },
+  "voz": [
+    ["f01", 0.3], ["f02", 5.7], ["g01", 7.4],
+    ["g02", 11.2], ["g03", 17.5], ["g04", 23.2], ["g05", 30.6], ["g06", 35.1],
+    ["g07", 42.7], ["g08", 49.0], ["g09", 55.7], ["g10", 65.0], ["f12", 68.9],
+    ["g11", 73.4], ["g12", 81.6], ["g13", 88.3], ["g14", 93.4], ["g15", 97.1], ["g16", 105.0],
+    ["g17", 110.7], ["g18", 116.5], ["g19", 121.2], ["g20", 128.8],
+    ["g21", 133.1], ["f13", 136.3], ["g22", 143.2], ["g23", 150.8], ["g24", 159.3], ["f10", 164.1],
+    ["f11", 166.3]
+  ],
+  "totalTemas": 5,
+  "temas": [
+    { "n": 1, "nombre": "USD", "inicio": 11.0, "codigo": "FED", "sub": "USD · Reserva Federal" },
+    { "n": 2, "nombre": "EUR", "inicio": 42.5, "codigo": "BCE", "sub": "EUR · Banco Central Europeo" },
+    { "n": 3, "nombre": "CAD", "inicio": 73.2, "codigo": "BOC", "sub": "CAD · Banco de Canadá" },
+    { "n": 4, "nombre": "JPY", "inicio": 110.5, "codigo": "BOJ", "sub": "JPY · Banco de Japón" },
+    { "n": 5, "nombre": "NZD", "inicio": 132.9, "codigo": "RBNZ", "sub": "NZD · Banco de Reserva de N. Zelanda" }
+  ],
+  "velas": [
+    { "t": 11.0, "color": "oso" },
+    { "t": 42.5, "color": "toro" },
+    { "t": 73.2, "color": "toro" },
+    { "t": 110.5, "color": "toro" },
+    { "t": 132.9, "color": "oso" },
+    { "t": 166.0, "color": "oso" }
+  ],
+  "balanza": [
+    [0, 0], [13.85, 0], [20.55, -0.2], [23.86, 0.15], [29.66, 0.3], [33.19, 0.35], [38.74, 0.15], [41.1, 0.3],
+    [45.48, 0], [47.6, -0.2], [52.57, -0.35], [60.47, 0], [67.86, -0.15], [69.75, 0],
+    [76.84, -0.5], [85.28, -0.6], [93.88, -0.6], [99.6, -0.2], [103.38, 0], [106.7, 0.2],
+    [113.4, 0], [119.24, -0.3], [125.2, -0.45], [131.7, -0.55],
+    [133.72, 0.4], [146.33, 0.7], [152.01, 0.6], [161.23, 0.35], [164.1, 0.4]
+  ],
+  "secciones": [
+    { "tipo": "filas", "titulo": "Decisión de la Fed", "t0": 11.0, "t1": 17.3,
+      "filas": [ { "sim": "TIPO", "nombre": "Sin cambios", "valor": "3,75–4,00%", "flecha": "=", "tono": "neutro", "detalle": "Voto 10-2 · como se esperaba", "t": 11.4, "tValor": 13.85, "tDetalle": 15.6 } ] },
+    { "tipo": "filas", "titulo": "El comunicado", "t0": 17.3, "t1": 23.0,
+      "filas": [
+        { "sim": "CRECIMIENTO", "nombre": "Antes: sólido", "valor": "FUERTE", "flecha": "▲", "tono": "toro", "detalle": "Mejora respecto a septiembre", "t": 17.6, "tValor": 20.55, "tDetalle": 21.2 },
+        { "sim": "INFLACIÓN", "nombre": "Sin cambios", "valor": "ELEVADA", "flecha": "", "tono": "oso", "detalle": "Todavía alta", "t": 21.6, "tValor": 22.24, "tDetalle": 22.6 }
+      ] },
+    { "tipo": "filas", "titulo": "Warsh, en la rueda de prensa", "t0": 23.0, "t1": 30.4,
+      "filas": [
+        { "sim": "CRÉDITO", "nombre": "La subida de septiembre", "valor": "YA SE NOTA", "flecha": "", "tono": "neutro", "detalle": "Condiciones financieras más duras", "t": 23.4, "tValor": 27.66, "tDetalle": 28.4 },
+        { "sim": "DICIEMBRE", "nombre": "Compromiso", "valor": "NINGUNO", "flecha": "", "tono": "oso", "detalle": "No anticipa una subida", "t": 29.2, "tValor": 29.66, "tDetalle": 30.0 }
+      ],
+      "sello": { "texto": "Menos duro", "tono": "oso", "t": 24.0 } },
+    { "tipo": "filas", "titulo": "Bono del Tesoro a 2 años", "t0": 30.4, "t1": 34.9,
+      "filas": [ { "sim": "US02Y", "nombre": "Durante la rueda de prensa", "valor": "4,70%", "flecha": "▼", "tono": "oso", "detalle": "Desde 4,77%", "t": 30.8, "tValor": 33.19, "tDetalle": 33.9 } ] },
+    { "tipo": "filas", "titulo": "Lo que espera el mercado", "t0": 34.9, "t1": 42.5,
+      "filas": [
+        { "sim": "DICIEMBRE", "nombre": "Probabilidad de subida", "valor": "> 80%", "flecha": "▲", "tono": "toro", "detalle": "CME FedWatch", "t": 35.3, "tValor": 38.74, "tDetalle": 39.4 },
+        { "sim": "2027", "nombre": "Más subidas", "valor": "SE MODERAN", "flecha": "▼", "tono": "oso", "detalle": "Ya no descuenta del todo tres subidas", "t": 40.4, "tValor": 41.1, "tDetalle": 41.7 }
+      ] },
+    { "tipo": "filas", "titulo": "Decisión del BCE", "t0": 42.5, "t1": 48.8,
+      "filas": [ { "sim": "DEPÓSITO", "nombre": "Sin cambios", "valor": "2,50%", "flecha": "=", "tono": "neutro", "detalle": "Unanimidad para esperar a diciembre", "t": 42.9, "tValor": 45.48, "tDetalle": 46.2 } ],
+      "sello": { "texto": "Debatió subir", "tono": "toro", "t": 47.6 } },
+    { "tipo": "columnas", "titulo": "Dos señales opuestas", "t0": 48.8, "t1": 65.0,
+      "cols": [
+        { "tit": "Señal dura", "sim": "ENERGÍA", "valor": "Riesgo ▲", "unidad": "Inflación al alza", "tono": "toro", "t": 52.57 },
+        { "tit": "Señal moderada", "sim": "FRANCIA", "valor": "+155 pb", "unidad": "Sobre Alemania a 10 años", "tono": "oso", "t": 60.47 }
+      ],
+      "pie": "Las condiciones financieras se endurecieron" },
+    { "tipo": "filas", "titulo": "Diciembre", "t0": 65.0, "t1": 68.7,
+      "filas": [ { "sim": "PUERTA", "nombre": "A una subida", "valor": "ABIERTA", "flecha": "", "tono": "toro", "detalle": "Sin comprometer una senda", "t": 65.3, "tValor": 67.86, "tDetalle": 68.2 } ] },
+    { "tipo": "filas", "titulo": "Relevo en el BCE", "t0": 68.7, "t1": 73.2,
+      "filas": [ { "sim": "LAGARDE", "nombre": "Dejará el BCE", "valor": "FEB 2027", "flecha": "", "tono": "neutro", "detalle": "Tras la reunión de febrero", "t": 69.0, "tValor": 69.75, "tDetalle": 72.14 } ] },
+    { "tipo": "filas", "titulo": "Decisión del Banco de Canadá", "t0": 73.2, "t1": 81.4,
+      "filas": [ { "sim": "TIPO", "nombre": "Sube 25 pb", "valor": "2,50%", "flecha": "▲", "tono": "toro", "detalle": "Desde 2,25% · 1ª subida desde julio de 2023", "t": 73.6, "tValor": 76.84, "tDetalle": 80.2 } ],
+      "sello": { "texto": "+25 pb", "tono": "toro", "t": 76.84 } },
+    { "tipo": "barras", "titulo": "Previsión de inflación 2027", "t0": 81.4, "t1": 88.1, "max": 3.1,
+      "barras": [
+        { "lab": "Antes (julio)", "valor": "2,0%", "num": 2.0, "tono": "neutro", "estilo": "punteado", "t": 83.6 },
+        { "lab": "Ahora (octubre)", "valor": "3,1%", "num": 3.1, "tono": "toro", "estilo": "lleno", "t": 85.28 }
+      ] },
+    { "tipo": "barras", "titulo": "Previsión de crecimiento 2026", "t0": 88.1, "t1": 93.2, "max": 1.0,
+      "barras": [
+        { "lab": "Antes (julio)", "valor": "0,7%", "num": 0.7, "tono": "neutro", "estilo": "punteado", "t": 89.4 },
+        { "lab": "Ahora (octubre)", "valor": "1,0%", "num": 1.0, "tono": "toro", "estilo": "lleno", "t": 90.7 }
+      ] },
+    { "tipo": "filas", "titulo": "La lectura", "t0": 93.2, "t1": 96.9,
+      "filas": [ { "sim": "BOC", "nombre": "Tono", "valor": "GIRO DURO", "flecha": "", "tono": "toro", "detalle": "Sin comprometer nuevas subidas", "t": 93.5, "tValor": 93.88, "tDetalle": 95.0 } ] },
+    { "tipo": "filas", "titulo": "Los datos no acompañan", "t0": 96.9, "t1": 104.8,
+      "filas": [
+        { "sim": "EMPLEO", "nombre": "Septiembre", "valor": "−68.000", "flecha": "▼", "tono": "oso", "detalle": "Segundo mes de pérdidas", "t": 97.3, "tValor": 99.6, "tDetalle": 100.8 },
+        { "sim": "PARO", "nombre": "Septiembre", "valor": "6,5%", "flecha": "▲", "tono": "oso", "detalle": "Desde 6,4%", "t": 102.8, "tValor": 103.38, "tDetalle": 104.0 }
+      ] },
+    { "tipo": "filas", "titulo": "PIB de Canadá", "t0": 104.8, "t1": 110.5,
+      "filas": [
+        { "sim": "AGOSTO", "nombre": "Mensual", "valor": "0,0%", "flecha": "", "tono": "oso", "detalle": "Se esperaba +0,2%", "t": 105.1, "tValor": 106.7, "tDetalle": 107.3 },
+        { "sim": "SEPTIEMBRE", "nombre": "Avance", "valor": "−0,1%", "flecha": "▼", "tono": "oso", "detalle": "Estimación preliminar", "t": 107.9, "tValor": 108.44, "tDetalle": 109.2 }
+      ],
+      "sello": { "texto": "Se estanca", "tono": "oso", "t": 106.8 } },
+    { "tipo": "filas", "titulo": "Decisión del Banco de Japón", "t0": 110.5, "t1": 116.3,
+      "filas": [ { "sim": "TIPO", "nombre": "Sin cambios", "valor": "1,25%", "flecha": "=", "tono": "neutro", "detalle": "Voto 8-1 · como se esperaba", "t": 110.9, "tValor": 113.4, "tDetalle": 114.8 } ] },
+    { "tipo": "filas", "titulo": "Inflación subyacente", "t0": 116.3, "t1": 121.0,
+      "filas": [ { "sim": "OBJETIVO", "nombre": "El BoJ la declara", "valor": "EN EL 2%", "flecha": "", "tono": "toro", "detalle": "Con riesgos al alza", "t": 116.6, "tValor": 119.24, "tDetalle": 120.06 } ] },
+    { "tipo": "barras", "titulo": "Previsión de inflación · año fiscal 2027", "t0": 121.0, "t1": 128.6, "max": 2.6,
+      "barras": [
+        { "lab": "Antes (julio)", "valor": "2,4%", "num": 2.4, "tono": "neutro", "estilo": "punteado", "t": 123.76 },
+        { "lab": "Ahora (octubre)", "valor": "2,6%", "num": 2.6, "tono": "toro", "estilo": "lleno", "t": 125.2 }
+      ] },
+    { "tipo": "filas", "titulo": "Lo que espera el mercado", "t0": 128.6, "t1": 132.9,
+      "filas": [ { "sim": "DICIEMBRE", "nombre": "Subida", "valor": "PROBABLE", "flecha": "▲", "tono": "toro", "detalle": "Probabilidad en torno al 80%", "t": 128.9, "tValor": 130.0, "tDetalle": 131.7 } ] },
+    { "tipo": "filas", "titulo": "Decisión del RBNZ", "t0": 132.9, "t1": 136.2,
+      "filas": [ { "sim": "ESPERADO", "nombre": "Subida de 25 pb", "valor": "3,00%", "flecha": "", "tono": "neutro", "detalle": "Lo que esperaba el mercado", "t": 133.2, "tValor": 133.72, "tDetalle": 134.6 } ],
+      "sello": { "texto": "Sorpresa", "tono": "oso", "t": 133.72 } },
+    { "tipo": "barras", "titulo": "Lo que se esperaba", "t0": 136.2, "t1": 143.0, "max": 100,
+      "barras": [
+        { "lab": "Probabilidad de subida", "valor": "98%", "num": 98, "tono": "neutro", "estilo": "lleno", "t": 137.91 },
+        { "lab": "Economistas que esperaban subida", "valor": "22 de 27", "num": 81.5, "tono": "neutro", "estilo": "raya", "t": 139.82 }
+      ] },
+    { "tipo": "filas", "titulo": "Lo que hizo", "t0": 143.0, "t1": 150.6,
+      "filas": [
+        { "sim": "ESPERADO", "nombre": "Subida de 25 pb", "valor": "3,00%", "flecha": "", "tono": "neutro", "detalle": "", "t": 143.3, "tValor": 143.4, "tDetalle": 143.4 },
+        { "sim": "REAL", "nombre": "Sin cambios", "valor": "2,75%", "flecha": "=", "tono": "oso", "detalle": "Votación ajustada", "t": 144.2, "tValor": 146.33, "tDetalle": 147.2 }
+      ],
+      "sello": { "texto": "4 a 3", "tono": "oso", "t": 149.58 } },
+    { "tipo": "filas", "titulo": "Por qué", "t0": 150.6, "t1": 159.1,
+      "filas": [
+        { "sim": "MOTIVO 1", "nombre": "Presiones internas", "valor": "MENORES", "flecha": "", "tono": "neutro", "detalle": "De lo que sugiere la inflación general", "t": 151.0, "tValor": 152.01, "tDetalle": 153.4 },
+        { "sim": "MOTIVO 2", "nombre": "Dos subidas este año", "valor": "TIEMPO", "flecha": "", "tono": "neutro", "detalle": "Necesitan tiempo para hacer efecto", "t": 155.8, "tValor": 158.37, "tDetalle": 158.7 }
+      ] },
+    { "tipo": "filas", "titulo": "El sesgo sigue siendo duro", "t0": 159.1, "t1": 166.0,
+      "filas": [ { "sim": "BREMAN", "nombre": "Gobernadora", "valor": "DICIEMBRE", "flecha": "▲", "tono": "toro", "detalle": "Ve probable subir · mercado ~77%", "t": 159.5, "tValor": 161.23, "tDetalle": 163.17 } ] }
+  ],
+  "frases": [
+    { "t": 11.2, "html": "Fed: <em>sin cambios</em>", "tono": "neutro" },
+    { "t": 17.5, "html": "Crecimiento <em>fuerte</em>", "tono": "toro" },
+    { "t": 23.2, "html": "Warsh <em>suaviza</em> el mensaje", "tono": "oso" },
+    { "t": 30.6, "html": "El 2 años <em>baja</em>", "tono": "oso" },
+    { "t": 35.1, "html": "Diciembre: <em>más del 80%</em>", "tono": "toro" },
+    { "t": 42.7, "html": "BCE: <em>debatió</em> subir", "tono": "toro" },
+    { "t": 49.0, "html": "Energía: <em>señal dura</em>", "tono": "toro" },
+    { "t": 55.7, "html": "Financiación: <em>señal moderada</em>", "tono": "oso" },
+    { "t": 65.0, "html": "Puerta <em>abierta</em> a diciembre", "tono": "toro" },
+    { "t": 68.9, "html": "Lagarde <em>dejará</em> el BCE", "tono": "neutro" },
+    { "t": 73.4, "html": "Canadá <em>sube</em> al 2,5%", "tono": "toro" },
+    { "t": 81.6, "html": "Inflación 2027: <em>3,1%</em>", "tono": "toro" },
+    { "t": 88.3, "html": "Crecimiento 2026: <em>1%</em>", "tono": "toro" },
+    { "t": 93.4, "html": "Un <em>giro duro</em>", "tono": "toro" },
+    { "t": 97.1, "html": "Pero los datos <em>no acompañan</em>", "tono": "oso" },
+    { "t": 105.0, "html": "PIB <em>estancado</em>", "tono": "oso" },
+    { "t": 110.7, "html": "Japón: <em>sin cambios</em>", "tono": "neutro" },
+    { "t": 116.5, "html": "Inflación <em>en su objetivo</em>", "tono": "toro" },
+    { "t": 121.2, "html": "Previsión 2027: <em>2,6%</em>", "tono": "toro" },
+    { "t": 128.8, "html": "Diciembre: subida <em>probable</em>", "tono": "toro" },
+    { "t": 133.1, "html": "La gran <em>sorpresa</em>", "tono": "oso" },
+    { "t": 136.3, "html": "Se esperaba una <em>subida</em>", "tono": "neutro" },
+    { "t": 143.2, "html": "<em>No subió</em>: 4 votos a 3", "tono": "oso" },
+    { "t": 150.8, "html": "Necesita <em>tiempo</em>", "tono": "neutro" },
+    { "t": 159.3, "html": "Breman: <em>diciembre</em> probable", "tono": "toro" },
+    { "t": 164.1, "html": "Todos miran a <em>diciembre</em>", "tono": "neutro" }
+  ]
+}
