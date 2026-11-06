@@ -12,6 +12,7 @@ import { Tablero } from "./Tablero";
 import { metaPmi, Pmi } from "./Pmi";
 import { metaResultados, ResultadosComp } from "./Resultados";
 import { PortadaTipos } from "./PortadaTipos";
+import { Anthropic, metaAnthropic } from "./Anthropic";
 
 type Props = { edicion: Edicion | null };
 
@@ -37,6 +38,7 @@ const BonosComp: React.FC<P2> = ({ s }) => (s ? <Bonos s={s} /> : null);
 
 export const RemotionRoot: React.FC = () => (
   <>
+    <Composition id="Anthropic" component={Anthropic} durationInFrames={2104} fps={30} width={1080} height={1920} defaultProps={{ d: null }} calculateMetadata={metaAnthropic} />
     <Composition id="Cifras" component={CifrasComp} durationInFrames={300} fps={30} width={1080} height={1920} defaultProps={{ edicion: null }} calculateMetadata={meta("cifras")} />
     <Composition id="Probabilidad" component={ProbComp} durationInFrames={200} fps={30} width={1080} height={1920} defaultProps={{ edicion: null }} calculateMetadata={meta("probabilidad")} />
     <Composition id="Tablero" component={TableroComp} durationInFrames={200} fps={30} width={1080} height={1920} defaultProps={{ s: null }} calculateMetadata={meta2("tablero")} />

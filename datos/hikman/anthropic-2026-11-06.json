@@ -1,0 +1,156 @@
+{
+  "publicacion": "ANTHROPIC · S-1",
+  "fecha": "06.11.2026",
+  "duracion": 94.933,
+  "remotion": {
+    "inicio": 20.533,
+    "fin": 90.667
+  },
+  "escenas": [
+    {
+      "i": 0,
+      "inicio": 0,
+      "fin": 5.7,
+      "duracionVoz": 4.91102,
+      "texto": "Dieciséis mil novecientos cincuenta y seis millones de dólares en ingresos trimestrales."
+    },
+    {
+      "i": 1,
+      "inicio": 5.7,
+      "fin": 12.1,
+      "duracionVoz": 5.564082,
+      "texto": "Ochocientos noventa y cinco mil cuatrocientos millones en compromisos de infraestructura."
+    },
+    {
+      "i": 2,
+      "inicio": 12.1,
+      "fin": 20.533,
+      "duracionVoz": 7.47102,
+      "texto": "Buenos días, inversor. Anthropic crece con fuerza, pero su apuesta exige mirar más allá de las ventas."
+    },
+    {
+      "i": 3,
+      "inicio": 20.533,
+      "fin": 28.9,
+      "duracionVoz": 7.392653,
+      "texto": "Los ingresos crecieron un cuarenta y siete por ciento trimestral. Antes, habían crecido un ciento cuarenta y cuatro por ciento."
+    },
+    {
+      "i": 4,
+      "inicio": 28.9,
+      "fin": 38.133,
+      "duracionVoz": 8.202449,
+      "texto": "La computación y la infraestructura costaron nueve mil ochocientos sesenta y tres millones: un cincuenta y ocho por ciento de los ingresos."
+    },
+    {
+      "i": 5,
+      "inicio": 38.133,
+      "fin": 44.3,
+      "duracionVoz": 5.32898,
+      "texto": "El trimestre cerró con una pérdida operativa de quinientos sesenta y siete millones de dólares."
+    },
+    {
+      "i": 6,
+      "inicio": 44.3,
+      "fin": 52.233,
+      "duracionVoz": 7.000816,
+      "texto": "De los compromisos de infraestructura, sesenta y nueve mil ochocientos millones vencen en los próximos doce meses."
+    },
+    {
+      "i": 7,
+      "inicio": 52.233,
+      "fin": 59.233,
+      "duracionVoz": 6.112653,
+      "texto": "Si la demanda decepciona, los ingresos pueden frenarse mientras los compromisos siguen llegando."
+    },
+    {
+      "i": 8,
+      "inicio": 59.233,
+      "fin": 68.133,
+      "duracionVoz": 7.88898,
+      "texto": "Eso podría comprimir los márgenes y aumentar la necesidad de financiación. Es un escenario de riesgo, no una predicción."
+    },
+    {
+      "i": 9,
+      "inicio": 68.133,
+      "fin": 77.367,
+      "duracionVoz": 8.202449,
+      "texto": "También hay fortalezas: ciento cuarenta y seis mil seiscientos millones de liquidez, incluyendo inversiones y crédito disponible."
+    },
+    {
+      "i": 10,
+      "inicio": 77.367,
+      "fin": 83.433,
+      "duracionVoz": 5.250612,
+      "texto": "Y seis mil seiscientos millones de flujo de caja operativo positivo en nueve meses."
+    },
+    {
+      "i": 11,
+      "inicio": 83.433,
+      "fin": 90.667,
+      "duracionVoz": 6.347755,
+      "texto": "La pregunta clave es cuánto margen queda después de pagar la computación y financiar la expansión."
+    },
+    {
+      "i": 12,
+      "inicio": 90.667,
+      "fin": 94.933,
+      "duracionVoz": 3.552653,
+      "texto": "Ese es el resumen de hoy. Hikman Capital."
+    }
+  ],
+  "voz": [
+    [
+      "00",
+      0.18
+    ],
+    [
+      "01",
+      5.88
+    ],
+    [
+      "02",
+      12.28
+    ],
+    [
+      "03",
+      20.713
+    ],
+    [
+      "04",
+      29.08
+    ],
+    [
+      "05",
+      38.313
+    ],
+    [
+      "06",
+      44.48
+    ],
+    [
+      "07",
+      52.413
+    ],
+    [
+      "08",
+      59.413
+    ],
+    [
+      "09",
+      68.313
+    ],
+    [
+      "10",
+      77.547
+    ],
+    [
+      "11",
+      83.613
+    ],
+    [
+      "12",
+      90.847
+    ]
+  ]
+}
